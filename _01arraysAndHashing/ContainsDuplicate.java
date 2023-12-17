@@ -4,8 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * NOTES: Use a Set, add the numbers one by one from the array,
- * check if the set already contains the current number, short circuit.
+ * Given an integer array nums, return true if any value appears at least twice in the array,
+ * and return false if every element is distinct.
  * 
  * https://leetcode.com/problems/contains-duplicate/
  * https://algo.monster/liteproblems/217
@@ -13,8 +13,8 @@ import java.util.Set;
 public class ContainsDuplicate {
 
     /**
-     * Given an integer array nums, return true if any value appears at least twice in the array,
-     * and return false if every element is distinct.
+     * NOTES: Use a Set, add the numbers one by one from the array,
+     * check if the set already contains the current number, short circuit.
      * O(n) time
      * O(n) space
      */
