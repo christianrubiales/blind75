@@ -2,6 +2,8 @@ package _10greedy;
 
 /**
  * Given an integer array nums, find the subarray with the largest sum, and return its sum.
+ * https://leetcode.com/problems/maximum-subarray
+ * https://algo.monster/liteproblems/53
  */
 public class MaximumSubarray {
 
