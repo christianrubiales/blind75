@@ -1,7 +1,5 @@
 package _04slidingWindow;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,7 +23,6 @@ public class MinimumWindowSubstring {
 
         int min = Integer.MAX_VALUE;
         String minString = "";
-        // Deque<Character> minString = new ArrayDeque<>();
         int tail = 0;
         int head = 0;
         Map<Character, Integer> counter1 = new HashMap<>();
@@ -52,7 +49,6 @@ public class MinimumWindowSubstring {
             // advance the tail 
             while (tail <= head && tail < s.length() && count >= t.length() - 1) {
                 char c = s.charAt(tail);
-                // String temp = s.substring(tail, head);
                 int length = head - tail + 1;
                 if (length < min && count == t.length()) {
                     min = Math.min(min, length);
@@ -64,9 +60,6 @@ public class MinimumWindowSubstring {
                     if (count == t.length()) {
                         int count2 = counter2.getOrDefault(c, 0);
                         counter2.put(c, --count2);
-                        // if (count2 == 0) {
-                        //     counter2.remove(c);
-                        // }
                         if (counter2.getOrDefault(c, 0) < counter1.get(c)) {
                             count--;
                         }
