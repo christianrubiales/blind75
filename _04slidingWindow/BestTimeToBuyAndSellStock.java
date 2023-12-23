@@ -5,7 +5,8 @@ package _04slidingWindow;
  * You want to maximize your profit by choosing a single day to buy one stock
  * and choosing a different day in the future to sell that stock.
  * Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
- * 
+ * https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+ * https://algo.monster/liteproblems/121
  */
 public class BestTimeToBuyAndSellStock {
 
